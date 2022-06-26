@@ -97,3 +97,7 @@ To deploy a contract we just need (in fact) to have a transaction going through 
 To test is out, just run `node ./deploy-transaction.js`
 
 > Notice that the transaction will be signed from the `(ethers) wallet.sendTransaction` function internally.
+
+## Environment variables
+
+Copy `.env.example` to `.env` and change settings accordingly to match what you have locally.
