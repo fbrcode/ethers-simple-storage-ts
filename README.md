@@ -101,3 +101,17 @@ To test is out, just run `node ./deploy-transaction.js`
 ## Environment variables
 
 Copy `.env.example` to `.env` and change settings accordingly to match what you have locally.
+
+### Real live security
+
+Follow the instructions to hide your Private Key:  <https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=27600s>
+
+Read this .env pledge: <https://github.com/smartcontractkit/full-blockchain-solidity-course-js/discussions/5>
+
+## Use Prettier as module
+
+Use it to sync code formatting to whoever contribute with the code.
+
+Install it with `yarn add --dev prettier prettier prettier-plugin-solidity`
+
+Add a `.prettierrc` with the formatting that will take precedence over what was defined in your editor.

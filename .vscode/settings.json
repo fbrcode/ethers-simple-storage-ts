@@ -10,7 +10,7 @@
     "editor.defaultFormatter": "NomicFoundation.hardhat-solidity",
     "editor.formatOnSave": true
   },
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
