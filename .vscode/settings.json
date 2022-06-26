@@ -3,7 +3,8 @@
     "esbenp",
     "fbrcode",
     "Nomic",
-    "solcjs"
+    "solcjs",
+    "structs"
 ],
   "[solidity]": {
     "editor.defaultFormatter": "NomicFoundation.hardhat-solidity",
