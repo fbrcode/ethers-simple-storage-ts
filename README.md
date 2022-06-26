@@ -88,4 +88,4 @@ Installation: `yarn add ethers`
 
 With Ganache local node running, change the settings on `deploy.js` to match a private key given by the node and sign the deployment transaction.
 
-Deployment output is saved on `contract-deploy-output.json`
+Contract deployment output is saved on `contract-deploy.json` and the transaction receipt is saved on `transaction-receipt.json`.
