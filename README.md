@@ -89,3 +89,11 @@ Installation: `yarn add ethers`
 With Ganache local node running, change the settings on `deploy.js` to match a private key given by the node and sign the deployment transaction.
 
 Contract deployment output is saved on `contract-deploy.json` and the transaction receipt is saved on `transaction-receipt.json`.
+
+### Sample deployment with transaction only mode
+
+To deploy a contract we just need (in fact) to have a transaction going through with required transaction data.
+
+To test is out, just run `node ./deploy-transaction.js`
+
+> Notice that the transaction will be signed from the `(ethers) wallet.sendTransaction` function internally.
