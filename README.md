@@ -69,3 +69,23 @@ And call it with `yarn compile` to generate:
 
 1. Interface specification: `SimpleStorage_sol_SimpleStorage.abi`
 2. Contract byte-code: `SimpleStorage_sol_SimpleStorage.bin`
+
+## Ganache (Truffle Suite)
+
+To use an interface and understand better how local blockchain deployment works, lets use [Ganache](https://trufflesuite.com/ganache/).
+
+Download and quick connect to spin up a local ethereum blockchain.
+
+[Playground for Ethereum JSON-RPC](https://playground.open-rpc.org/?schemaUrl=https://raw.githubusercontent.com/ethereum/eth1.0-apis/assembled-spec/openrpc.json&uiSchema%5BappBar%5D%5Bui:splitView%5D=true&uiSchema%5BappBar%5D%5Bui:input%5D=false&uiSchema%5BappBar%5D%5Bui:examplesDropdown%5D=false) ([Remote-Procedure-Call encoded in JSON](https://en.wikipedia.org/wiki/JSON-RPC))
+
+## Ethers.js
+
+[Ethers.js](https://docs.ethers.io/v5/) is a JS library that helps to interact with ethereum JSON-RPC.
+
+Installation: `yarn add ethers`
+
+## Deploying
+
+With Ganache local node running, change the settings on `deploy.js` to match a private key given by the node and sign the deployment transaction.
+
+Deployment output is saved on `contract-deploy-output.json`
