@@ -5,7 +5,7 @@ async function main() {
   // JSON RPC endpoint = http://0.0.0.0:7545
   const provider = new ethers.providers.JsonRpcProvider("http://0.0.0.0:7545");
   const wallet = new ethers.Wallet(
-    "4cd81ad807121a315b6bcd0347602a37e1028e3dc4de467403df3c3b411d902e",
+    "b7493e4856db46dcafaaa302840da2782e8338c20ee14bd769bec4705d531af3",
     provider
   );
   const abi = fs.readFileSync("./SimpleStorage_sol_SimpleStorage.abi", "utf-8");
@@ -37,6 +37,14 @@ async function main() {
   console.log(
     `Transaction receipt: ${JSON.stringify(transactionReceipt, null, 2)}`
   );
+
+  // get contract data, update and get again
+  const favoriteNumber = await contract.retrieve(); // retrieve the contract data default value
+  console.log(`Favorite number: ${favoriteNumber}`);
+  const transactionResponse = await contract.store("7"); // store 7 as favorite number
+  await transactionResponse.wait(1); // wait for 1 block confirmation
+  const updatedFavoriteNumber = await contract.retrieve(); // retrieve the contract data updated value
+  console.log(`Updated favorite number: ${updatedFavoriteNumber}`);
 }
 
 main()
