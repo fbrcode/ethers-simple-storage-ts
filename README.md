@@ -41,3 +41,18 @@ Open VS code workspace settings (JSON) and add the following line:
         "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
     },
 ```
+
+## Install SOLC
+
+Having yarn package manager installed initialize the repository and install the proper solidity compiler.
+
+- `yarn init -y`
+- `yarn add --dev solc@0.8.7-fixed`
+
+Try it out by checking the version: `yarn solcjs --version`
+
+You should get `0.8.7+commit.e28d00a7.Emscripten.clang` as output.
+
+For manual compilation of `SimpleStorage.sol` single file, type:
+
+`yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol`
