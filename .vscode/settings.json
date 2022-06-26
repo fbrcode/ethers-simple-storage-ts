@@ -1,5 +1,10 @@
 {
-  "cSpell.words": ["esbenp", "Nomic"],
+  "cSpell.words": [
+    "esbenp",
+    "fbrcode",
+    "Nomic",
+    "solcjs"
+],
   "[solidity]": {
     "editor.defaultFormatter": "NomicFoundation.hardhat-solidity",
     "editor.formatOnSave": true
