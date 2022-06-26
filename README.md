@@ -56,3 +56,16 @@ You should get `0.8.7+commit.e28d00a7.Emscripten.clang` as output.
 For manual compilation of `SimpleStorage.sol` single file, type:
 
 `yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol`
+
+Add this command in **scripts** section of `package.json` for less typing on compilation command.
+
+```json
+  "scripts": {
+    "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+  }
+```
+
+And call it with `yarn compile` to generate:
+
+1. Interface specification: `SimpleStorage_sol_SimpleStorage.abi`
+2. Contract byte-code: `SimpleStorage_sol_SimpleStorage.bin`
