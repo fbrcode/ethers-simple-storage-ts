@@ -50,3 +50,7 @@ main()
     console.error(err);
     process.exit(1);
   });
+
+// Rinkeby deployed contract: https://rinkeby.etherscan.io/address/0xba050022798f372e5ffdf7e1414a40cd314136c2
+// Favorite number: 0
+// Updated favorite number: 7
