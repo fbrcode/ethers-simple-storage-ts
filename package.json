@@ -7,12 +7,15 @@
   "license": "MIT",
   "scripts": {
     "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol",
-    "deploy": "node ./deploy.js"
+    "deploy": "ts-node ./deploy.ts"
   },
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
     "prettier": "^2.7.1",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
-    "solc": "0.8.7-fixed"
+    "solc": "0.8.7-fixed",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
